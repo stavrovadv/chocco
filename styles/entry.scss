@@ -1,0 +1,12 @@
+$green: #365a49;
+$green--hover: #2e4e3f;
+$blue: #86c3d7;
+
+@import './layout/_normalize';
+@import './layout/_fonts';
+@import './layout/_base';
+
+@import './blocks/_fisrt-screen';
+@import './blocks/_nav';
+@import './blocks/_contacts';
+@import './blocks/_advantages';

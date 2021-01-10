@@ -1,0 +1,23 @@
+.contacts{
+  position: relative;
+  padding-left: 17px;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 12px;
+    height: 11px;
+    background: url(../../img/firstScreen/phone.png) no-repeat;
+  }
+
+  &:hover{
+    font-weight: 500;
+  }
+}
+
+.header__contacts{
+  font-size: 24px;
+  line-height: 1.25;
+}

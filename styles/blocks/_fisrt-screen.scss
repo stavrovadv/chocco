@@ -1,0 +1,86 @@
+.first-screen{
+  background: url(../../img/firstScreen/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  &__content{
+    margin-top: 95px;
+    position: relative;
+  }
+
+  &__main{
+    display: flex;
+  }
+
+  &__desc{
+    max-width: 480px;
+  }
+
+  &__info{
+    max-width: 80%;
+  }
+
+  &__text{
+    font-size: 21px;
+    margin-top: 15px;
+  }
+
+  &__btn{
+    margin-top: 32px;
+  }
+
+  &__image{
+    position: relative;
+  }
+
+  &__img{
+    max-width: 503px;
+    position: relative;
+    top: -20%;
+    left: 10%; 
+  }
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding: 24px 0 0;
+}
+
+.logo{
+  max-width: 53px;
+  margin-right: 45px;
+}
+
+.fs{
+  &__borderline{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+  }
+
+  &-borderline__left{
+    width: 50%;
+    position: relative;
+
+    img{
+      position: absolute;
+      left: -10%;
+    }
+  }
+  &-borderline__right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+    img:first-child{
+      margin-right: 21%;
+    }
+  }
+}
+
+// nav в файле _nav.scss
+// contacts в файле _contacts.scss

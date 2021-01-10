@@ -1,0 +1,12 @@
+.nav{
+  margin-right: 44px;
+
+  &__list{
+    display: flex;
+    width: 100%;
+  }
+
+  &__item:not(:last-child){
+    margin-right: 27px;
+  }
+}

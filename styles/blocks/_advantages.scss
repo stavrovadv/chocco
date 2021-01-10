@@ -1,0 +1,22 @@
+.advantages{
+  margin-top: 68px;
+  display: flex;
+
+  &__item{
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+  }
+
+  &__item:not(:last-child){
+    margin-right: 6px;
+  }
+
+  &__image{
+    margin-right: 9px;
+
+    img{
+      min-width: 50px;
+    }
+  }
+}
