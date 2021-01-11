@@ -1,0 +1,96 @@
+.about {
+  position: relative;
+  
+  &__content {
+    width: 100%;
+    padding-top: 105px;
+  }
+
+  &__main {
+    text-align: center;
+
+  }
+// Блок заголовка и абзаца
+  &__desc {
+    max-width: 45%;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+// 
+  &__list{
+    display: flex;
+    margin-top: 55px;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 276px;
+    // border: 1px solid goldenrod;
+
+    &:not(:last-child){
+      margin-right: 60px;
+    }
+  }
+
+  &__image{
+    margin: auto;
+    max-width: 125px;
+    background-color: $gray;
+    padding: 27px;
+    border-radius: 50%;
+  }
+
+  &__subtitle{
+    margin-top: 27px;
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  &__item-text{
+    color: $gray-text;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 18px;
+  }
+  
+  &__borderline-images {
+    position: absolute;
+    top: 29%;
+    left: 0;
+    
+    .about__berry{
+      position: absolute;
+      bottom: -81%;
+    }
+  }
+
+}
+
+.about__image::before{
+  content: '';
+  background-color: black;
+  width: 67px;
+  height: 21px;
+  background: url("../img/about/1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  // border: 1px solid red;
+  position: absolute;
+  right: -23%;
+  top: 21%;
+}
+
+.about__item:last-child{
+  .about__image::before{
+    content: '';
+    background: none;
+  }
+}
