@@ -1,6 +1,8 @@
 $green: #365a49;
 $green--hover: #2e4e3f;
 $blue: #86c3d7;
+$gray: #f2f5f4;
+$gray-text: #666;
 
 @import './layout/_normalize';
 @import './layout/_fonts';
@@ -10,3 +12,9 @@ $blue: #86c3d7;
 @import './blocks/_nav';
 @import './blocks/_contacts';
 @import './blocks/_advantages';
+
+@import './blocks/_about';
+
+@import './blocks/_reviews';
+
+@import './blocks/_order';

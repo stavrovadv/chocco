@@ -3,13 +3,9 @@
   
   &__content {
     width: 100%;
-    padding-top: 105px;
-  }
-
-  &__main {
     text-align: center;
-
   }
+
 // Блок заголовка и абзаца
   &__desc {
     max-width: 45%;
@@ -32,7 +28,6 @@
     justify-content: center;
     position: relative;
     max-width: 276px;
-    // border: 1px solid goldenrod;
 
     &:not(:last-child){
       margin-right: 60px;
@@ -82,7 +77,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  // border: 1px solid red;
   position: absolute;
   right: -23%;
   top: 21%;
