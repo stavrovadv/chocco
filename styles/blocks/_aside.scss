@@ -1,0 +1,43 @@
+.aside{
+  position: fixed;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  &__list{
+    display: flex;
+    flex-direction: column;  
+  }
+
+  &__item{
+    &:not(:first-child){
+      margin-top: 5px;
+    }
+
+    &--active .aside__link{
+      border: 1px solid #fff;
+    }
+  }
+
+  &__link{
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+
+    &::before{
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
