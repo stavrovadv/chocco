@@ -9,6 +9,19 @@
 <body>
   <div class="wrapper">
    <div class="wrapper__content">
+     <aside class="aside">
+       <ul class="aside__list">
+         <li class="aside__item aside__item--active"><a href="#first-screen" class="aside__link"></a></li>
+         <li class="aside__item"><a href="#about" class="aside__link"></a></li>
+         <li class="aside__item"><a href="#candy-bar" class="aside__link"></a></li>
+         <li class="aside__item"><a href="#team" class="aside__link"></a></li>
+         <li class="aside__item"><a href="menu" class="aside__link"></a></li>
+         <li class="aside__item"><a href="#reviews" class="aside__link"></a></li>
+         <li class="aside__item"><a href="#weWork" class="aside__link"></a></li>
+         <li class="aside__item"><a href="#order" class="aside__link"></a></li>
+         <li class="aside__item"><a href="#map" class="aside__link"></a></li>
+       </ul>
+     </aside>
       <section class="first-screen" id="first-screen">
         <div class="container">
           <header class="header">
@@ -35,7 +48,7 @@
                   <a href="#reviews" class="nav__link">Отзывы</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#video-description" class="nav__link">Как мы работаем</a>
+                  <a href="#weWork" class="nav__link">Как мы работаем</a>
                 </li>
                 <li class="nav__item">
                   <a href="#contacts" class="nav__link">Контакты</a>
@@ -57,19 +70,25 @@
                 <ul class="advantages">
                   <li class="advantages__item">
                     <div class="advantages__image">
-                      <img src="./img/firstScreen/natural.png" alt="">
+                      <svg class="advantages__img">
+                        <use xlink:href="./img/sprite.svg#advantages__1"></use>
+                      </svg>
                     </div>
                     <div class="advantages__text">100% натуральный продукт</div>
                   </li>
                   <li class="advantages__item">
                     <div class="advantages__image">
-                      <img src="./img/firstScreen/delivery.png" alt="">
+                      <svg class="advantages__img">
+                        <use xlink:href="./img/sprite.svg#advantages__2"></use>
+                      </svg>
                     </div>
                     <div class="advantages__text">3-5 дней доставка по РФ</div>
                   </li>
                   <li class="advantages__item">
                     <div class="advantages__image">
-                      <img src="./img/firstScreen/fit.png" alt="">
+                      <svg class="advantages__img">
+                        <use xlink:href="./img/sprite.svg#advantages__3"></use>
+                      </svg>
                     </div>
                     <div class="advantages__text">Не портит фигуру</div>
                   </li>
@@ -103,7 +122,10 @@
               <ul class="about__list">
                 <li class="about__item">
                   <div class="about__image">
-                    <img src="./img/about/about_1.png" alt="" class="about img">
+                    <svg class="about__img">
+                      <use xlink:href="./img/sprite.svg#about__1"></use>
+                    </svg>
+                    <!-- <img src="./img/about/about_1.png" alt="" class="about img"> -->
                   </div>
                   <div class="about__item-desc">
                     <h4 class="about__subtitle">Полезно</h4>
@@ -114,7 +136,9 @@
                 </li>
                 <li class="about__item">
                   <div class="about__image">
-                    <img src="./img/about/about_2.png" alt="" class="about img">
+                    <svg class="about__img">
+                      <use xlink:href="./img/sprite.svg#about__2"></use>
+                    </svg>
                   </div>
                   <div class="about__item-desc">
                     <h4 class="about__subtitle">Вкусно</h4>
@@ -125,7 +149,9 @@
                 </li>
                 <li class="about__item">
                   <div class="about__image">
-                    <img src="./img/about/about_3.png" alt="" class="about img">
+                    <svg class="about__img">
+                      <use xlink:href="./img/sprite.svg#about__3"></use>
+                    </svg>
                   </div>
                   <div class="about__item-desc">
                     <h4 class="about__subtitle">Питательно</h4>
@@ -140,11 +166,73 @@
         </div>
         <div class="about__borderline-images borderline-images">
           <div class="about__leaf">
-            <img src="./img/about/bg_leaf.png" alt="" class="about__leaf-img">
+            <img src="./img/about/bg_leaf.png" alt="лист" class="about__leaf-img">
           </div>
   
           <div class="about__berry">
-            <img src="./img/about/малина.png" alt="" class="about__berry-img">
+            <img src="./img/about/малина.png" alt="ягода" class="about__berry-img">
+          </div>
+        </div>
+      </section>
+      <section class="team" id="team">
+        <div class="container">
+          <div class="team__content content-center">
+            <div class="team__main">
+              <h2 class="team__title base__title base__title--black">Команда</h2>
+              <ul class="team__list">
+                <li class="team__member">
+                  <div class="team-member__image">
+                    <img src="./img/team/photo-1542211295-d5bf730e56cd.jpg" alt="" class="team-member__img">
+                  </div>
+                  <article class="team-member__desc team__member--active">
+                    <div class="team-member__name">Борис Федорович</div>
+                    <div class="team-member__role">Главный технолог</div>
+                    <p class="team-member__text">Отвечает за вкусовые качества 
+                      и калорийность.
+                    </p>
+                  </article>
+                </li>
+                <li class="team__member">
+                  <div class="team-member__image">
+                    <img src="./img/team/photo-1548534984-ddf53b264a58.jpg" alt="" class="team-member__img">
+                  </div>
+                  <article class="team-member__desc">
+                    <div class="team-member__name">Алла Иванова</div>
+                    <div class="team-member__role">Специалист по упаковке</div>
+                    <p class="team-member__text">Автор запоминающегося стиля 
+                      наших батончиков.
+                    </p>
+                  </article>
+                </li>
+                <li class="team__member team__member--active">
+                  <div class="team-member__image">
+                    <img src="./img/team/photo-1551153771-1a67a570d583.jpg" alt="" class="team-member__img">
+                  </div>
+                  <article class="team-member__desc">
+                    <div class="team-member__name">Кирилл Матросов</div>
+                    <div class="team-member__role">Оператор</div>
+                    <p class="team-member__text">С радостью поможет подобрать батончики и оформить заказ.</p>
+                  </article>
+                </li>
+                <li class="team__member">
+                  <div class="team-member__image">
+                    <img src="./img/team/photo-1549351512-c5e12b11e283.jpg" alt="" class="team-member__img">
+                  </div>
+                  <article class="team-member__desc">
+                    <div class="team-member__name">Мила Рыжкова</div>
+                    <div class="team-member__role">PR, маркетинг</div>
+                    <p class="team-member__text">По всем вопросам сотрудничества 
+                      и рекламы писать только Миле.
+                    </p>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="team__borderline-images borderline-images">
+          <div class="team__berry">
+            <img src="./img/team/Малина.png" alt="малина" class="team__berry-img">
           </div>
         </div>
       </section>
@@ -298,6 +386,7 @@
           </div>
         </div>
       </section>
+      
    </div>
   </div>
 </body>

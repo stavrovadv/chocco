@@ -3,10 +3,16 @@ $green--hover: #2e4e3f;
 $blue: #86c3d7;
 $gray: #f2f5f4;
 $gray-text: #666;
+$tablets: 768px;
+$phones: 480px;
 
 @import './layout/_normalize';
 @import './layout/_fonts';
+@import './layout/_function';
+@import './layout/_media';
 @import './layout/_base';
+
+@import './blocks/_aside';
 
 @import './blocks/_fisrt-screen';
 @import './blocks/_nav';
@@ -14,6 +20,8 @@ $gray-text: #666;
 @import './blocks/_advantages';
 
 @import './blocks/_about';
+
+@import './blocks/_team';
 
 @import './blocks/_reviews';
 

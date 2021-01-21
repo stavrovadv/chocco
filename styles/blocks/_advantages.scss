@@ -15,8 +15,10 @@
   &__image{
     margin-right: 9px;
 
-    img{
-      min-width: 50px;
-    }
+  }
+  &__img{
+    fill: #ffffff;
+    max-width: 50px;
+    max-height: 42px;
   }
 }

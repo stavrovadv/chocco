@@ -501,7 +501,8 @@ table {
 .wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-width: 1105px;
+  min-height: 100%;
   font-variant-numeric: lining-nums;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -509,6 +510,7 @@ table {
 
 section {
   height: 100vh;
+  min-height: 650px;
 }
 
 .container {
@@ -554,14 +556,63 @@ section {
   border-radius: 30% / 80%;
 }
 
-.btn:hover {
-  background-color: #2e4e3f;
-  color: #fff;
+.btn--white, .btn:hover {
+  background-color: #fff;
+  color: #365a49;
 }
 
-.btn--white {
-  color: #365a49;
+.btn--white:hover {
+  color: #fff;
+  background-color: #365a49;
+}
+
+.aside {
+  position: fixed;
+  top: 50%;
+  right: 4%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+
+.aside__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aside__item:not(:first-child) {
+  margin-top: 5px;
+}
+
+.aside__item--active .aside__link {
+  border: 1px solid #fff;
+}
+
+.aside__link {
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+}
+
+.aside__link::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
   background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .first-screen {
@@ -673,11 +724,12 @@ section {
 .contacts::before {
   content: '';
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 0;
   width: 12px;
   height: 11px;
-  background: url(../img/firstScreen/phone.png) no-repeat;
+  background: url(../../img/sprite.svg#phone-green) no-repeat 100%;
+  background-size: cover;
 }
 
 .contacts:hover {
@@ -687,6 +739,7 @@ section {
 .header__contacts {
   font-size: 24px;
   line-height: 1.25;
+  z-index: 10;
 }
 
 .advantages {
@@ -714,8 +767,10 @@ section {
   margin-right: 9px;
 }
 
-.advantages__image img {
-  min-width: 50px;
+.advantages__img {
+  fill: #ffffff;
+  max-width: 50px;
+  max-height: 42px;
 }
 
 .about {
@@ -771,6 +826,12 @@ section {
   border-radius: 50%;
 }
 
+.about__img {
+  fill: #000000;
+  max-width: 70px;
+  max-height: 69px;
+}
+
 .about__subtitle {
   margin-top: 27px;
   font-size: 27px;
@@ -814,6 +875,99 @@ section {
   background: none;
 }
 
+.team {
+  position: relative;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -20px;
+  margin-top: 54px;
+}
+
+.team__member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% / 4 - 18px);
+  margin-left: 18px;
+}
+
+.team-member__image {
+  max-width: 220px;
+  height: 288px;
+}
+
+.team-member__img {
+  max-width: 100%;
+}
+
+.team-member__desc {
+  margin-top: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.team-member__name {
+  cursor: pointer;
+  display: inline;
+  font-size: 21px;
+  font-weight: bold;
+  position: relative;
+  padding-right: 15px;
+}
+
+.team-member__name::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #365a49;
+  border-bottom: 0;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.team-member__role, .team-member__text {
+  opacity: 0;
+}
+
+.team-member__role {
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.team-member__text {
+  font-weight: 300;
+  color: #666;
+  margin-top: 3px;
+}
+
+.team__berry {
+  position: absolute;
+  bottom: -8%;
+  left: 3%;
+}
+
+.team__member--active .team-member__role, .team__member--active .team-member__text {
+  opacity: 1;
+}
+
+.team__member--active .team-member__name::after {
+  border-top: 0;
+  border-bottom: 8px solid #365a49;
+}
+
 .reviews {
   position: relative;
 }
@@ -853,7 +1007,7 @@ section {
 }
 
 .reviews__img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .reviews__desc {
@@ -893,13 +1047,14 @@ section {
 
 .reviews__mini-item {
   margin-left: 11px;
+  cursor: pointer;
 }
 
-.reviews__mini-item--active {
+.reviews__mini-item--active, .reviews__mini-item:hover {
   margin-right: 12px;
 }
 
-.reviews__mini-item--active .reviews__mini-img {
+.reviews__mini-item--active .reviews__mini-img, .reviews__mini-item:hover .reviews__mini-img {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   border: 6px solid #2e4e3f;
@@ -910,7 +1065,7 @@ section {
 }
 
 .reviews__mini-img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 50%;
 }
 

@@ -42,6 +42,12 @@
     border-radius: 50%;
   }
 
+  &__img{
+    fill: #000000;
+    max-width: 70px;
+    max-height: 69px;
+  }
+
   &__subtitle{
     margin-top: 27px;
     font-size: 27px;

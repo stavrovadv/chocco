@@ -5,11 +5,12 @@
   &::before{
     content: '';
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 0;
     width: 12px;
     height: 11px;
-    background: url(../img/firstScreen/phone.png) no-repeat;
+    background: url(../../img/sprite.svg#phone-green) no-repeat 100%;
+    background-size: cover;
   }
 
   &:hover{
