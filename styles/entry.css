@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -533,6 +534,7 @@ section {
   font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .base__title--black {
@@ -740,6 +742,16 @@ section {
   font-size: 24px;
   line-height: 1.25;
   z-index: 10;
+}
+
+.footer__contacts.contacts::before {
+  -webkit-filter: brightness(0.2) sepia(1) hue-rotate(120deg) saturate(5);
+          filter: brightness(0.2) sepia(1) hue-rotate(120deg) saturate(5);
+}
+
+.footer__contacts {
+  margin-top: 5px;
+  color: #365a49;
 }
 
 .advantages {
@@ -966,6 +978,133 @@ section {
 .team__member--active .team-member__name::after {
   border-top: 0;
   border-bottom: 8px solid #365a49;
+}
+
+.menu {
+  background: url(../../img/menu/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.menu__main {
+  padding-left: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__title {
+  margin-right: 51px;
+  margin-top: 9%;
+}
+
+.menu__list {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item-milk .menu__subtitle {
+  background: url(../../img/menu/kokosovoe-maslo-dlya-zdorovya-i-krasoty.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.menu__item-honey .menu__subtitle {
+  background: url(../../img/menu/Granola-Bars-with-calamondin.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.menu__item-berry .menu__subtitle {
+  background: url(../../img/menu/shutterstock_684121381.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.menu__item--active .menu__desc {
+  display: block;
+}
+
+.menu__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-width: 100px;
+  position: relative;
+}
+
+.menu__subtitle span {
+  display: inline-block;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  font-size: 46px;
+  white-space: pre;
+  bottom: 7%;
+}
+
+.menu__desc {
+  display: none;
+  font-size: 16px;
+  padding: 8% 18% 9% 4%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  line-height: 1.5;
+  position: relative;
+}
+
+.menu__desc::before {
+  content: '';
+  background-color: #fff;
+  width: 20px;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  right: 7%;
+  top: 5%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu__desc::after {
+  content: '';
+  background-color: #fff;
+  width: 20px;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  right: 7%;
+  top: 5%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .reviews {
@@ -1290,5 +1429,62 @@ section {
 .form__btn-reset:hover, .form__btn-reset:active, .form__btn-reset:focus {
   color: #000;
   outline: none;
+}
+
+.map {
+  background: url(../../img/map/карта.jpg);
+  background-size: cover;
+}
+
+.footer {
+  background-color: #fff;
+  width: 100%;
+  padding: 26px 0 21px 0;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contacts-block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-style: normal;
+  font-size: 21px;
+}
+
+.social {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social__item:hover .social__img {
+  fill: #000;
+}
+
+.social__img {
+  max-width: 21px;
+  max-height: 21px;
+  fill: #f2f5f4;
 }
 /*# sourceMappingURL=entry.css.map */

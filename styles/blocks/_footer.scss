@@ -1,0 +1,19 @@
+.footer{
+  background-color: #fff;
+  width: 100%;
+  padding: 26px 0 21px 0;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts-block{
+    flex: 1;
+    font-style: normal;
+    font-size: 21px;
+  }
+
+  // footer__contacts и иконка телефона стилизованы в _contacts.scss
+}

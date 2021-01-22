@@ -23,3 +23,12 @@
   line-height: 1.25;
   z-index: 10;
 }
+
+.footer__contacts.contacts::before{
+  filter: brightness(0.2) sepia(1) hue-rotate(120deg) saturate(5);
+}
+
+.footer__contacts{
+  margin-top: 5px;
+  color: $green;
+}

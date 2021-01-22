@@ -1,0 +1,23 @@
+.social{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  &__item{
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+
+    &:hover{
+      .social__img{
+        fill: #000;
+      }
+    }
+  }
+
+  &__img{
+    max-width: 21px;
+    max-height: 21px;
+    fill: $gray;
+  }
+}
