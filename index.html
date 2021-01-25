@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="wrapper">
-   <div class="wrapper__content">
+   <!-- <div class="wrapper__content"> -->
      <aside class="aside">
        <ul class="aside__list">
          <li class="aside__item aside__item--active"><a href="#first-screen" class="aside__link"></a></li>
@@ -27,10 +27,10 @@
           <header class="header">
             <div class="logo header__logo">
               <a href="#first-screen" class="header__logo-link">
-                <img src="./img/firstScreen/logo.png" alt="">
+                <img src="./img/firstScreen/logo.png" alt="logo">
               </a>
             </div>
-            <nav class="nav">
+            <nav class="nav"><!--nav--active-->
               <ul class="nav__list">
                 <li class="nav__item">
                   <a href="#about" class="nav__link">О нас</a>
@@ -58,6 +58,9 @@
             <div class="contacts header__contacts">
               <a class="header__phone" href="tel:+78009039090">8 800 903 90 90</a>
             </div>
+            <a href="#" class="hamburger-menu__wrap"><!--hamburger-menu__wrap--active-->
+              <div class="hamburger-menu"></div>
+            </a>
           </header>
           <div class="first-screen__content">
             <div class="first-screen__main content-center">
@@ -95,16 +98,16 @@
                 </ul>
               </div>
               <div class="first-screen__image">
-                <img src="./img/firstScreen/Батончики.png" alt="" class="first-screen__img">
+                <img src="./img/firstScreen/Батончики.png" alt="chocolate bar" class="first-screen__img">
               </div>
             </div>
             <div class="first-screen__borderline-images fs__borderline borderline-images">
               <div class="fs-borderline__left">
-                <img src="./img/firstScreen/singleLeaf.png" alt="">
+                <img src="./img/firstScreen/singleLeaf.png" alt="leaf">
               </div>
               <div class="fs-borderline__right"> <!-- Добавить дивы? -->
-                <img src="./img/firstScreen/doubleLeaf.png" alt="">
-                <img src="./img/firstScreen/Ежевика.png" alt="">
+                <img src="./img/firstScreen/doubleLeaf.png" alt="leafs">
+                <img src="./img/firstScreen/Ежевика.png" alt="blackberry">
               </div>
             </div>
           </div>
@@ -125,7 +128,6 @@
                     <svg class="about__img">
                       <use xlink:href="./img/sprite.svg#about__1"></use>
                     </svg>
-                    <!-- <img src="./img/about/about_1.png" alt="" class="about img"> -->
                   </div>
                   <div class="about__item-desc">
                     <h4 class="about__subtitle">Полезно</h4>
@@ -166,11 +168,11 @@
         </div>
         <div class="about__borderline-images borderline-images">
           <div class="about__leaf">
-            <img src="./img/about/bg_leaf.png" alt="лист" class="about__leaf-img">
+            <img src="./img/about/bg_leaf.png" alt="leaf" class="about__leaf-img">
           </div>
   
           <div class="about__berry">
-            <img src="./img/about/малина.png" alt="ягода" class="about__berry-img">
+            <img src="./img/about/малина.png" alt="raspberry" class="about__berry-img">
           </div>
         </div>
       </section>
@@ -185,48 +187,42 @@
               <ul class="team__list">
                 <li class="team__member">
                   <div class="team-member__image">
-                    <img src="./img/team/photo-1542211295-d5bf730e56cd.jpg" alt="" class="team-member__img">
+                    <img src="./img/team/photo-1542211295-d5bf730e56cd.jpg" alt="Главный технолог" class="team-member__img">
                   </div>
-                  <article class="team-member__desc team__member--active">
-                    <div class="team-member__name">Борис Федорович</div>
-                    <div class="team-member__role">Главный технолог</div>
-                    <p class="team-member__text">Отвечает за вкусовые качества 
-                      и калорийность.
-                    </p>
+                  <div class="team-member__name">Борис Федорович</div>
+                  <article class="team-member__desc">
+                      <div class="team-member__role">Главный технолог</div>
+                      <p class="team-member__text">Отвечает за вкусовые качества и калорийность.</p>
                   </article>
                 </li>
                 <li class="team__member">
                   <div class="team-member__image">
-                    <img src="./img/team/photo-1548534984-ddf53b264a58.jpg" alt="" class="team-member__img">
+                    <img src="./img/team/photo-1548534984-ddf53b264a58.jpg" alt="Специалист по упаковке" class="team-member__img">
                   </div>
+                  <div class="team-member__name">Алла Иванова</div>
                   <article class="team-member__desc">
-                    <div class="team-member__name">Алла Иванова</div>
-                    <div class="team-member__role">Специалист по упаковке</div>
-                    <p class="team-member__text">Автор запоминающегося стиля 
-                      наших батончиков.
-                    </p>
+                      <div class="team-member__role">Специалист по упаковке</div>
+                      <p class="team-member__text">Автор запоминающегося стиля наших батончиков.</p>
+                  </article>
+                </li>
+                <li class="team__member">
+                  <div class="team-member__image">
+                    <img src="./img/team/photo-1551153771-1a67a570d583.jpg" alt="Оператор" class="team-member__img">
+                  </div>
+                  <div class="team-member__name">Кирилл Матросов</div>
+                  <article class="team-member__desc">
+                      <div class="team-member__role">Оператор</div>
+                      <p class="team-member__text">С радостью поможет подобрать батончики и оформить заказ.</p>
                   </article>
                 </li>
                 <li class="team__member team__member--active">
                   <div class="team-member__image">
-                    <img src="./img/team/photo-1551153771-1a67a570d583.jpg" alt="" class="team-member__img">
+                    <img src="./img/team/photo-1549351512-c5e12b11e283.jpg" alt="PR, маркетинг" class="team-member__img">
                   </div>
+                  <div class="team-member__name">Мила Рыжкова</div>
                   <article class="team-member__desc">
-                    <div class="team-member__name">Кирилл Матросов</div>
-                    <div class="team-member__role">Оператор</div>
-                    <p class="team-member__text">С радостью поможет подобрать батончики и оформить заказ.</p>
-                  </article>
-                </li>
-                <li class="team__member">
-                  <div class="team-member__image">
-                    <img src="./img/team/photo-1549351512-c5e12b11e283.jpg" alt="" class="team-member__img">
-                  </div>
-                  <article class="team-member__desc">
-                    <div class="team-member__name">Мила Рыжкова</div>
-                    <div class="team-member__role">PR, маркетинг</div>
-                    <p class="team-member__text">По всем вопросам сотрудничества 
-                      и рекламы писать только Миле.
-                    </p>
+                      <div class="team-member__role">PR, маркетинг</div>
+                      <p class="team-member__text">По всем вопросам сотрудничества и рекламы писать только Миле.</p>
                   </article>
                 </li>
               </ul>
@@ -235,7 +231,7 @@
         </div>
         <div class="team__borderline-images borderline-images">
           <div class="team__berry">
-            <img src="./img/team/Малина.png" alt="малина" class="team__berry-img">
+            <img src="./img/team/Малина.png" alt="raspberry" class="team__berry-img">
           </div>
         </div>
       </section>
@@ -281,7 +277,7 @@
                 <ul class="reviews__list">
                   <li class="reviews__item reviews__item--active">
                     <div class="reviews__image">
-                      <img src="./img/reviews/photo1.jpg" alt="" class="reviews__img">
+                      <img src="./img/reviews/photo1.jpg" alt="author's photo" class="reviews__img">
                     </div>
                     <article class="reviews__desc">
                       <h4 class="reviews__subtitle">Лучший перекус</h4>
@@ -293,7 +289,7 @@
                   </li>
                   <!-- <li class="reviews__item">
                     <div class="reviews__image">
-                      <img src="./img/reviews/photo2.jpg" alt="" class="reviews__img">
+                      <img src="./img/reviews/photo2.jpg" alt="author's photo" class="reviews__img">
                     </div>
                     <article class="reviews__desc">
                       <h4 class="reviews__subtitle">Идеально подходят для спортсменов</h4>
@@ -303,7 +299,7 @@
                   </li>
                   <li class="reviews__item">
                     <div class="reviews__image">
-                      <img src="./img/reviews/photo3.jpg" alt="" class="reviews__img">
+                      <img src="./img/reviews/photo3.jpg" alt="author's photo" class="reviews__img">
                     </div>
                     <article class="reviews__desc">
                       <h4 class="reviews__subtitle">Лучшие батончики премиум уровня</h4>
@@ -315,17 +311,17 @@
                 <ul class="reviews__mini-list">
                   <li class="reviews__mini-item reviews__mini-item--active">
                     <div class="reviews__mini-image">
-                      <img src="./img/reviews/photo1.jpg" alt="" class="reviews__mini-img">
+                      <img src="./img/reviews/photo1.jpg" alt="author's photo" class="reviews__mini-img">
                     </div>
                   </li>
                   <li class="reviews__mini-item">
                     <div class="reviews__mini-image">
-                      <img src="./img/reviews/photo2.jpg" alt="" class="reviews__mini-img">
+                      <img src="./img/reviews/photo2.jpg" alt="author's photo" class="reviews__mini-img">
                     </div>
                   </li>
                   <li class="reviews__mini-item">
                     <div class="reviews__mini-image">
-                      <img src="./img/reviews/photo3.jpg" alt="" class="reviews__mini-img">
+                      <img src="./img/reviews/photo3.jpg" alt="author's photo" class="reviews__mini-img">
                     </div>
                   </li>
                 </ul>
@@ -335,14 +331,14 @@
         </div>
         <div class="reviews__borderline-images borderline-images">
           <div class="reviews__borderline-top">
-            <img src="./img/reviews/berry.png" alt="">
+            <img src="./img/reviews/berry.png" alt="Strawberry">
           </div>
           <div class="reviews__borderline-bottom">
             <div class="reviews__borderline-leaf">
-              <img src="./img/reviews/Узор.png" alt="">
+              <img src="./img/reviews/Узор.png" alt="leaf">
             </div>
             <div class="reviews__borderline-berry">
-              <img src="./img/reviews/Ягоды.png" alt="">
+              <img src="./img/reviews/Ягоды.png" alt="berry">
             </div>
           </div>
         </div>
@@ -469,7 +465,7 @@
          </div>
         </div>
       </footer>
-   </div>
+   <!-- </div> -->
   </div>
 </body>
 </html>

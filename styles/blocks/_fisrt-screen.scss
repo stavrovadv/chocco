@@ -6,63 +6,86 @@
   color: #fff;
   position: relative;
 
+  @include tablets{
+    background-position: right;
+  }
+
   &__content{
     height: 100%;
   }
 
   &__main{
-    // display: flex;
-    // align-items: center;
+    @include tablets{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__desc{
-    max-width: 480px;
+    max-width: rem(480px);
+    @include tablets{
+      order: 1;
+      max-width: 100%;
+      z-index: 1;
+    }
   }
 
   &__info{
     max-width: 80%;
+
+    @include tablets{
+      max-width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__text{
-    font-size: 21px;
-    margin-top: 15px;
+    font-size: rem(21px);
+    margin-top: rem(15px);
+
+    @include tablets{
+      max-width: 60%;
+      margin: 0 auto;
+    }
   }
 
   &__btn{
-    margin-top: 32px;
+    margin-top: rem(32px);
   }
 
   &__image{
     position: relative;
     top: -11%;
     left: 5%; 
+
+    @include tablets{
+      top: -5%;
+      left: 0;
+    }
   }
 
   &__img{
-    max-width: 503px;
-    // position: relative;
-    // top: -20%;
-    // left: 10%; 
+    max-width: 100%;
+
+    @include tablets{
+      max-width: 80%;
+    }
+
+    @include phones{
+      max-width: 70%;
+    }
   }
 }
 
-.header{
-  display: flex;
-  align-items: center;
-  padding: 24px 0 0;
-}
-
-.logo{
-  max-width: 53px;
-  margin-right: 45px;
-}
+// header and logo in _header.scss
 
 .fs{
   &__borderline{
-    // position: absolute;
     display: flex;
     width: 100%;
-    // bottom: 0;
   }
 
   &-borderline__left{
@@ -70,6 +93,11 @@
     position: absolute;
     left: 3%;
     bottom: -9%;
+
+    @include tablets{
+      top: 52%;
+      left: 25%;
+    }
   }
   &-borderline__right{
     width: 50%;
@@ -79,8 +107,18 @@
     right: 8%;
     bottom: -6%;
 
+    @include tablets{
+      bottom: 36%;
+      right: 20%;
+      z-index: 0;
+    }
+
     img:first-child{
       margin-right: 16%;
+
+      @include tablets{
+        margin-right: 5%;
+      }
     }
   }
 }

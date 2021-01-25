@@ -10,16 +10,20 @@
   &__desc {
     max-width: 45%;
     margin: 0 auto;
+
+    @include tablets{
+      max-width: 70%;
+    }
   }
 
   &__text {
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: rem(18px);
+    margin-top: rem(10px);
   }
 // 
   &__list{
     display: flex;
-    margin-top: 55px;
+    margin-top: rem(55px);
   }
 
   &__item{
@@ -27,48 +31,57 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    max-width: 276px;
+    max-width: rem(276px);
 
     &:not(:last-child){
-      margin-right: 60px;
+      margin-right: rem(60px);
     }
   }
 
   &__image{
     margin: auto;
-    max-width: 125px;
+    max-width: rem(125px);
     background-color: $gray;
-    padding: 27px;
+    padding: rem(27px);
     border-radius: 50%;
   }
 
   &__img{
     fill: #000000;
-    max-width: 70px;
-    max-height: 69px;
+    max-width: rem(70px);
+    max-height: rem(69px);
   }
 
   &__subtitle{
-    margin-top: 27px;
-    font-size: 27px;
+    margin-top: rem(27px);
+    font-size: rem(27px);
     font-weight: bold;
   }
 
   &__item-text{
     color: $gray-text;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 300;
-    margin-top: 18px;
+    margin-top: rem(18px);
   }
   
-  &__borderline-images {
+  &__leaf {
     position: absolute;
     top: 29%;
     left: 0;
+
+    @include tablets{
+      top: 10%;
+    }
     
-    .about__berry{
-      position: absolute;
-      bottom: -81%;
+  }
+  &__berry{
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+
+    @include tablets{
+      bottom: -10%;
     }
   }
 
@@ -77,8 +90,8 @@
 .about__image::before{
   content: '';
   background-color: black;
-  width: 67px;
-  height: 21px;
+  width: rem(67px);
+  height: rem(21px);
   background: url("../img/about/1.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -86,6 +99,10 @@
   position: absolute;
   right: -23%;
   top: 21%;
+
+  @include tablets{
+    content: none;
+  }
 }
 
 .about__item:last-child{

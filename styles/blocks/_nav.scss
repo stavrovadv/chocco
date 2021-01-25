@@ -1,12 +1,56 @@
 .nav{
-  margin-right: 44px;
+  @include tablets{
+    display: none;
+  }
+  
+  &--active{
+    @include tablets{
+      display: block;
+      background-color: #333537;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+      padding: 10%;
+      overflow: hidden;
+    }
+  }
 
   &__list{
     display: flex;
+    justify-content: space-between;
     width: 100%;
+
+    @include tablets{
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      line-height: 2;
+    }
+
+    @include phones{
+      font-size: 30px;
+      line-height: 1.7;
+    }
+  }
+
+  &__item{
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
   }
 
   &__item:not(:last-child){
-    margin-right: 27px;
+    margin-right: rem(25px);
+
+    @include tablets{
+      margin-right: 0;
+    }
   }
+
 }

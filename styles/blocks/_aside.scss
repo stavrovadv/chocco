@@ -5,6 +5,10 @@
   transform: translateY(-50%);
   z-index: 1;
 
+  @include tablets{
+    display: none;
+  }
+
   &__list{
     display: flex;
     flex-direction: column;  
@@ -12,7 +16,7 @@
 
   &__item{
     &:not(:first-child){
-      margin-top: 5px;
+      margin-top: rem(5px);
     }
 
     &--active .aside__link{
@@ -24,14 +28,14 @@
     display: block;
     border-radius: 50%;
     position: relative;
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     border: 1px solid transparent;
 
     &::before{
       content: '';
-      width: 6px;
-      height: 6px;
+      width: rem(6px);
+      height: rem(6px);
       border-radius: 50%;
       background-color: #fff;
       position: absolute;

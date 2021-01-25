@@ -1,24 +1,28 @@
 .advantages{
-  margin-top: 50px;
+  margin-top: rem(50px);
   display: flex;
+
+  @include tablets{
+    display: none;
+  }
 
   &__item{
     display: flex;
     align-items: flex-start;
-    font-size: 16px;
+    font-size: rem(16px);
   }
 
   &__item:not(:last-child){
-    margin-right: 6px;
+    margin-right: rem(6px);
   }
 
   &__image{
-    margin-right: 9px;
+    margin-right: rem(9px);
 
   }
   &__img{
     fill: #ffffff;
-    max-width: 50px;
-    max-height: 42px;
+    max-width: rem(50px);
+    max-height: rem(42px);
   }
 }

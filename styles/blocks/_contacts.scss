@@ -1,14 +1,14 @@
 .contacts{
   position: relative;
-  padding-left: 17px;
+  padding-left: rem(17px);
 
   &::before{
     content: '';
     position: absolute;
     top: 30%;
     left: 0;
-    width: 12px;
-    height: 11px;
+    width: rem(12px);
+    height: rem(11px);
     background: url(../../img/sprite.svg#phone-green) no-repeat 100%;
     background-size: cover;
   }
@@ -19,9 +19,13 @@
 }
 
 .header__contacts{
-  font-size: 24px;
+  font-size: rem(24px);
   line-height: 1.25;
   z-index: 10;
+
+  @include tablets{
+    display: none;
+  }
 }
 
 .footer__contacts.contacts::before{
@@ -29,6 +33,6 @@
 }
 
 .footer__contacts{
-  margin-top: 5px;
+  margin-top: rem(5px);
   color: $green;
 }

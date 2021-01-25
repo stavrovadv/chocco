@@ -3,6 +3,8 @@ $green--hover: #2e4e3f;
 $blue: #86c3d7;
 $gray: #f2f5f4;
 $gray-text: #666;
+
+// breakpoints
 $tablets: 768px;
 $phones: 480px;
 
@@ -15,8 +17,12 @@ $phones: 480px;
 @import './blocks/_aside';
 
 @import './blocks/_fisrt-screen';
+
+@import './blocks/_header';
+
 @import './blocks/_nav';
 @import './blocks/_contacts';
+@import './blocks/_hamburger-menu';
 @import './blocks/_advantages';
 
 @import './blocks/_about';

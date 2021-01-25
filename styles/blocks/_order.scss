@@ -5,7 +5,7 @@
   color: $green;
 
   &__main{
-    padding-top: 75px;
+    padding-top: rem(75px);
     width: 100%;
   }
 }
@@ -13,15 +13,30 @@
 .form{
   display: flex;
   width: 100%;
-  margin-top: 45px;
+  margin-top: rem(45px);
+
+  @include tablets{
+    flex-direction: column;
+    padding: 0 15%;
+  }
 
   &__group{
     flex: 1;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 500;
 
     &:first-of-type{
-      margin-right: 20px;
+      margin-right: rem(20px);
+
+      @include tablets{
+        margin-right: 0;
+      }
+    }
+
+    &:not(:first-of-type){
+      @include tablets{
+        margin-top: rem(17px);
+      }
     }
   }
 
@@ -30,7 +45,7 @@
     flex: 1;
 
     &:not(:first-child){
-      margin-top: 17px;
+      margin-top: rem(17px);
     }
   }
 
@@ -38,14 +53,14 @@
     width: 100%;
 
     &:not(:first-child){
-      margin-left: 20px;
+      margin-left: rem(20px);
     }
   }
 
   &__input{
     width: 100%;
-    padding: 16px 9px;
-    margin-top: 4px;
+    padding: .6rem .5rem;
+    margin-top: rem(4px);
     border: solid 3px transparent;
 
     &:focus{
@@ -55,13 +70,13 @@
 
   &__field{
     resize: vertical;
-    min-height: 170px;
+    min-height: rem(170px);
   }
 
   &__radio-label{
     display: flex;
-    margin-right: 23px;
-    margin-top: 5px;
+    margin-right: rem(23px);
+    margin-top: rem(5px);
   }
 
   &__radio-label, &__block{
@@ -81,8 +96,8 @@
     input[type="radio"]:not(:checked) + div {
         display: inline-block;
         position: relative;
-        padding-left: 30px;
-        line-height: 20px;
+        padding-left: rem(30px);
+        line-height: rem(20px);
         cursor: pointer;
     }
 
@@ -94,8 +109,8 @@
         position: absolute;
         left: -1px;
         top: -3px;
-        width: 24px;
-        height: 24px;
+        width: rem(24px);
+        height: rem(24px);
         border: 1px solid #dddddd;
         background-color: #ffffff;
     }
@@ -124,10 +139,10 @@
 
     input[type="checkbox"]:checked + div:after, 
     input[type="checkbox"]:not(:checked) + div:after {
-        left: 7px;
-        top: 5px;
-        width: 7px;
-        height: 3px;
+        left: rem(7px);
+        top: rem(5px);
+        width: rem(7px);
+        height: rem(3px);
         border-radius: 1px;
         border-left: 3px solid $green;
         border-bottom: 4px solid $green;
@@ -142,8 +157,8 @@
     input[type="radio"]:not(:checked) + div:after {
         left: 6px;
         top: 3px;
-        width: 13px;
-        height: 13px;
+        width: rem(13px);
+        height: rem(13px);
         border-radius: 100%;
         background-color: $green;
     }
@@ -160,11 +175,16 @@
   }
 
   &__row.form__btns{
-    margin-top: 50px;
+    margin-top: rem(50px);
+
+    @include tablets{
+      width: 60%;
+      margin: rem(34px) auto;
+    }
   }
 
   &__btn{
-    margin-right: 29px;
+    margin-right: rem(29px);
   }
 
   &__btn-reset{
