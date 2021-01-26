@@ -17,13 +17,30 @@
 
   @include tablets{
     flex-direction: column;
-    padding: 0 15%;
+    padding: 0 19%;
+    margin-top: rem(36px);
+  }
+
+  @include phones{
+    padding: 0;
+    align-items: center;
   }
 
   &__group{
     flex: 1;
     font-size: rem(18px);
     font-weight: 500;
+
+
+    @include tablets{
+      font-size: rem(16px);
+      line-height: 1.67;
+    }
+
+    @include phones{
+      width: 100%;
+      font-size: rem(18px);
+    }
 
     &:first-of-type{
       margin-right: rem(20px);
@@ -46,6 +63,18 @@
 
     &:not(:first-child){
       margin-top: rem(17px);
+
+      @include tablets{
+        margin-top: rem(16px);
+      }
+    }
+
+    &-switches{
+      @include phones{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
     }
   }
 
@@ -59,18 +88,23 @@
 
   &__input{
     width: 100%;
-    padding: .6rem .5rem;
+    padding: .3rem .2rem;
     margin-top: rem(4px);
     border: solid 3px transparent;
 
     &:focus{
       border: solid 3px #dee2bd;
+      margin-top: 0;
     }
   }
 
   &__field{
     resize: vertical;
     min-height: rem(170px);
+
+    @include tablets{
+      min-height: rem(80px);
+    }
   }
 
   &__radio-label{

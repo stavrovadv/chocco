@@ -71,6 +71,17 @@
         width: 100%;
       }
     }
+
+    &~.menu__item{
+      @include phones{
+        display: none;
+      }
+    }
+
+    @include phones{
+      position: absolute;
+    }
+    
   }
 
   &__subtitle{

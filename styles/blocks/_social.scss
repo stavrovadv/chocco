@@ -3,6 +3,10 @@
   display: flex;
   justify-content: flex-end;
 
+  @include phones{
+    margin-top: rem(20px);
+  }
+
   &__item{
     &:not(:last-child){
       margin-right: rem(20px);

@@ -30,9 +30,18 @@
 
 .footer__contacts.contacts::before{
   filter: brightness(0.2) sepia(1) hue-rotate(120deg) saturate(5);
+
+  @include phones{
+    left: 20%;
+    top: 25%;
+  }
 }
 
 .footer__contacts{
   margin-top: rem(5px);
   color: $green;
+
+  @include phones{
+    margin-top: rem(20px);
+  }
 }

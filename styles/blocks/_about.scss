@@ -14,6 +14,10 @@
     @include tablets{
       max-width: 70%;
     }
+
+    @include phones{
+      max-width: 90%;
+    }
   }
 
   &__text {
@@ -23,7 +27,15 @@
 // 
   &__list{
     display: flex;
+    align-items: flex-start;
     margin-top: rem(55px);
+
+    @include phones{
+      text-align: left;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: rem(20px);
+    }
   }
 
   &__item{
@@ -31,10 +43,26 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    max-width: rem(276px);
+    flex: 1;
+
+    @include phones{
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-right: 0;
+      margin-top: rem(40px);
+      padding-right: rem(25px);
+    }
 
     &:not(:last-child){
-      margin-right: rem(60px);
+      margin-right: 8%;
+
+      @include tablets{
+        margin-right: 5%;
+      }
+
+      @include phones{
+        margin-right: 0;
+      }
     }
   }
 
@@ -44,6 +72,10 @@
     background-color: $gray;
     padding: rem(27px);
     border-radius: 50%;
+
+    @include phones{
+      margin-right: rem(15px);
+    }
   }
 
   &__img{
@@ -56,6 +88,18 @@
     margin-top: rem(27px);
     font-size: rem(27px);
     font-weight: bold;
+
+    @include tablets{
+      margin-top: rem(24px);
+    }
+
+    @include phones{
+      margin-top: rem(3px);
+    }
+  }
+
+  &__borderline-images{
+    @include phones{display: none;}
   }
 
   &__item-text{
@@ -71,7 +115,7 @@
     left: 0;
 
     @include tablets{
-      top: 10%;
+      top: 6%;
     }
     
   }
@@ -84,7 +128,13 @@
       bottom: -10%;
     }
   }
+  &__leaf, &__berry{
+    max-width: 100%;
 
+    @include tablets{
+      max-width: 90%;
+    }
+  }
 }
 
 .about__image::before{
