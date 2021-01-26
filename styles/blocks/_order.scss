@@ -5,8 +5,15 @@
   color: $green;
 
   &__main{
-    padding-top: rem(75px);
+    padding: rem(75px) 0 0 0;
     width: 100%;
+  }
+
+  &__title{
+    @include phones{
+      font-size: rem(32px);
+      white-space: nowrap;
+    }
   }
 }
 
@@ -24,6 +31,7 @@
   @include phones{
     padding: 0;
     align-items: center;
+    margin-top: rem(30px);
   }
 
   &__group{
@@ -40,6 +48,8 @@
     @include phones{
       width: 100%;
       font-size: rem(18px);
+      display: flex;
+      flex-direction: column;
     }
 
     &:first-of-type{
@@ -66,6 +76,10 @@
 
       @include tablets{
         margin-top: rem(16px);
+      }
+
+      @include phones{
+        margin-top: rem(10px);
       }
     }
 
@@ -212,8 +226,13 @@
     margin-top: rem(50px);
 
     @include tablets{
-      width: 60%;
       margin: rem(34px) auto;
+    }
+
+    @include phones{
+      margin: 0;
+      margin-top: rem(20px);
+      align-self: center;
     }
   }
 

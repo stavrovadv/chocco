@@ -3,6 +3,10 @@
 
   &__slider {
     margin-top: rem(34px);
+
+    @include phones{
+      margin-top: rem(30px);
+    }
   }
 
   &__list{
@@ -25,6 +29,10 @@
       justify-content: center;
       align-items: center;
       padding: rem(28px) rem(21px);
+    }
+
+    @include phones{
+      padding: rem(23px) rem(20px);
     }
 
     &::before {
@@ -67,12 +75,20 @@
       margin-top: rem(26px);
       text-align: center;
     }
+
+    @include phones{
+      margin-top: rem(20px);
+    }
   }
 
   &__subtitle {
     margin-top: rem(11px);
     font-size: rem(30px);
     font-weight: bold;
+
+    @include phones{
+      margin-top: rem(8px);
+    }
   }
 
   &__text {
@@ -115,6 +131,14 @@
 
   &__mini-image {
     width: rem(67px);
+
+    @include tablets{
+      width: rem(58px);
+    }
+
+    @include phones{
+      width: rem(53px);
+    }
   }
 
   &__mini-img {
@@ -145,16 +169,30 @@
   }
 
   &__borderline-leaf{
-    max-width: 100%;
+    max-width: rem(102px);
+    width: 100%;
 
     @include tablets{
-      max-width: 90%;
+      width: 90%;
+    }
+
+    @include phones{
+      width: 70%;
     }
   }
 
   &__borderline-berry {
     position: absolute;
     bottom: 24%;
-    max-width: 100%;
+    max-width: rem(135px);
+    width: 100%;
+
+    @include tablets{
+      width: 90%;
+    }
+
+    @include phones{
+      width: 70%;
+    }
   }
 }

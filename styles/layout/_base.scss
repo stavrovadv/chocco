@@ -127,6 +127,10 @@ section{
   font-weight: 800;
   padding: rem(18px) rem(35px);
   border-radius: 30% / 80%;
+
+  @include tablets{
+    padding: rem(16px) rem(32px);
+  }
 }
 
 .btn--white, .btn:hover{
