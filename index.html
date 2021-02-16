@@ -1,293 +1,460 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chocco</title>
-  <link rel="stylesheet" href="./styles/entry.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocco</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/entry.css">
 </head>
+
 <body>
-  <div class="wrapper">
-   <!-- <div class="wrapper__content"> -->
-     <aside class="aside">
-       <ul class="aside__list">
-         <li class="aside__item aside__item--active"><a href="#first-screen" class="aside__link"></a></li>
-         <li class="aside__item"><a href="#about" class="aside__link"></a></li>
-         <li class="aside__item"><a href="#candy-bar" class="aside__link"></a></li>
-         <li class="aside__item"><a href="#team" class="aside__link"></a></li>
-         <li class="aside__item"><a href="menu" class="aside__link"></a></li>
-         <li class="aside__item"><a href="#reviews" class="aside__link"></a></li>
-         <li class="aside__item"><a href="#weWork" class="aside__link"></a></li>
-         <li class="aside__item"><a href="#order" class="aside__link"></a></li>
-         <li class="aside__item"><a href="#map" class="aside__link"></a></li>
-       </ul>
-     </aside>
-      <section class="first-screen" id="first-screen">
-        <div class="container">
-          <header class="header">
-            <div class="logo header__logo">
-              <a href="#first-screen" class="header__logo-link">
-                <img src="./img/firstScreen/logo.png" alt="logo">
-              </a>
-            </div>
-            <nav class="nav"><!--nav--active-->
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#about" class="nav__link">О нас</a>
+    <div class="wrapper">
+        <!-- <div class="wrapper__content"> -->
+        <aside class="aside">
+            <ul class="aside__list">
+                <li class="aside__item aside__item--active">
+                    <a href="#first-screen" class="aside__link"></a>
                 </li>
-                <li class="nav__item">
-                  <a href="#candy-bar" class="nav__link">Батончики</a>
+                <li class="aside__item">
+                    <a href="#about" class="aside__link"></a>
                 </li>
-                <li class="nav__item">
-                  <a href="#team" class="nav__link">Команда</a>
+                <li class="aside__item">
+                    <a href="#candy-bar" class="aside__link"></a>
                 </li>
-                <li class="nav__item">
-                  <a href="#menu" class="nav__link">Меню</a>
+                <li class="aside__item">
+                    <a href="#team" class="aside__link"></a>
                 </li>
-                <li class="nav__item">
-                  <a href="#reviews" class="nav__link">Отзывы</a>
+                <li class="aside__item">
+                    <a href="menu" class="aside__link"></a>
                 </li>
-                <li class="nav__item">
-                  <a href="#weWork" class="nav__link">Как мы работаем</a>
+                <li class="aside__item">
+                    <a href="#reviews" class="aside__link"></a>
                 </li>
-                <li class="nav__item">
-                  <a href="#contacts" class="nav__link">Контакты</a>
+                <li class="aside__item">
+                    <a href="#weWork" class="aside__link"></a>
                 </li>
-              </ul>
-            </nav>
-            <div class="contacts header__contacts">
-              <a class="header__phone" href="tel:+78009039090">8 800 903 90 90</a>
-            </div>
-            <a href="#" class="hamburger-menu__wrap"><!--hamburger-menu__wrap--active-->
-              <div class="hamburger-menu"></div>
-            </a>
-          </header>
-          <div class="first-screen__content">
-            <div class="first-screen__main content-center">
-              <div class="first-screen__desc">
-                <div class="first-screen__info">
-                  <h1 class="base__title first-screen__title">натуральные шоколадные батончики</h1>
-                  <p class="first-screen__text">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-                  <a href="#order" class="btn btn--white first-screen__btn">Заказать</a>
-                </div>
-                <ul class="advantages">
-                  <li class="advantages__item">
-                    <div class="advantages__image">
-                      <svg class="advantages__img">
-                        <use xlink:href="./img/sprite.svg#advantages__1"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages__text">100% натуральный продукт</div>
-                  </li>
-                  <li class="advantages__item">
-                    <div class="advantages__image">
-                      <svg class="advantages__img">
-                        <use xlink:href="./img/sprite.svg#advantages__2"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages__text">3-5 дней доставка по РФ</div>
-                  </li>
-                  <li class="advantages__item">
-                    <div class="advantages__image">
-                      <svg class="advantages__img">
-                        <use xlink:href="./img/sprite.svg#advantages__3"></use>
-                      </svg>
-                    </div>
-                    <div class="advantages__text">Не портит фигуру</div>
-                  </li>
-                </ul>
-              </div>
-              <div class="first-screen__image">
-                <img src="./img/firstScreen/Батончики.png" alt="chocolate bar" class="first-screen__img">
-              </div>
-            </div>
-            <div class="first-screen__borderline-images fs__borderline borderline-images">
-              <div class="fs-borderline__left">
-                <img src="./img/firstScreen/singleLeaf.png" alt="leaf">
-              </div>
-              <div class="fs-borderline__right"> <!-- Добавить дивы? -->
-                <img src="./img/firstScreen/doubleLeaf.png" alt="leafs">
-                <img src="./img/firstScreen/Ежевика.png" alt="blackberry">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about" id="about">
-        <div class="container">
-          <div class="about__content content-center">
-            <div class="about__main">
-              <div class="about__desc">
-                <h2 class="about__title base__title base__title--black">почему chocco?</h2>
-                <p class="about__text">В нашем мире все происходит очень быстро, поэтому мы
-                  делаем батончики, которые удобно взять с собой.</p>
-              </div>
-              <ul class="about__list">
-                <li class="about__item">
-                  <div class="about__image">
-                    <svg class="about__img">
-                      <use xlink:href="./img/sprite.svg#about__1"></use>
-                    </svg>
-                  </div>
-                  <div class="about__item-desc">
-                    <h4 class="about__subtitle">Полезно</h4>
-                    <p class="about__item-text">Натуральность - ключевое качество
-                      нашей продукции. Мы используем
-                      только природные ингредиенты.</p>
-                  </div>
+                <li class="aside__item">
+                    <a href="#order" class="aside__link"></a>
                 </li>
-                <li class="about__item">
-                  <div class="about__image">
-                    <svg class="about__img">
-                      <use xlink:href="./img/sprite.svg#about__2"></use>
-                    </svg>
-                  </div>
-                  <div class="about__item-desc">
-                    <h4 class="about__subtitle">Вкусно</h4>
-                    <p class="about__item-text">Нежный, ненавязчивый, изысканный – 
-                      так клиенты описывают вкусовые 
-                      качества наших батончиков.</p>
-                  </div>
+                <li class="aside__item">
+                    <a href="#map" class="aside__link"></a>
                 </li>
-                <li class="about__item">
-                  <div class="about__image">
-                    <svg class="about__img">
-                      <use xlink:href="./img/sprite.svg#about__3"></use>
-                    </svg>
-                  </div>
-                  <div class="about__item-desc">
-                    <h4 class="about__subtitle">Питательно</h4>
-                    <p class="about__item-text">Высокое содержание качественного 
-                      белка, а также всех необходимых 
-                      витаминов и минералов.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>      
-          </div>
-        </div>
-        <div class="about__borderline-images borderline-images">
-          <div class="about__leaf">
-            <img src="./img/about/bg_leaf.png" alt="leaf" class="about__leaf-img">
-          </div>
-  
-          <div class="about__berry">
-            <img src="./img/about/малина.png" alt="raspberry" class="about__berry-img">
-          </div>
-        </div>
-      </section>
-      <section class="candy-bar" id="candy-bar" style="background-color: aquamarine; background-size: cover;">
-        <div class="container"></div>
-      </section>
-      <section class="team" id="team">
-        <div class="container">
-          <div class="team__content content-center">
-            <div class="team__main">
-              <h2 class="team__title base__title base__title--black">Команда</h2>
-              <ul class="team__list">
-                <li class="team__member">
-                  <div class="team-member__image">
-                    <img src="./img/team/photo-1542211295-d5bf730e56cd.jpg" alt="Главный технолог" class="team-member__img">
-                  </div>
-                  <div class="team-member__name">Борис Федорович</div>
-                  <article class="team-member__desc">
-                      <div class="team-member__role">Главный технолог</div>
-                      <p class="team-member__text">Отвечает за вкусовые качества и калорийность.</p>
-                  </article>
-                </li>
-                <li class="team__member">
-                  <div class="team-member__image">
-                    <img src="./img/team/photo-1548534984-ddf53b264a58.jpg" alt="Специалист по упаковке" class="team-member__img">
-                  </div>
-                  <div class="team-member__name">Алла Иванова</div>
-                  <article class="team-member__desc">
-                      <div class="team-member__role">Специалист по упаковке</div>
-                      <p class="team-member__text">Автор запоминающегося стиля наших батончиков.</p>
-                  </article>
-                </li>
-                <li class="team__member">
-                  <div class="team-member__image">
-                    <img src="./img/team/photo-1551153771-1a67a570d583.jpg" alt="Оператор" class="team-member__img">
-                  </div>
-                  <div class="team-member__name">Кирилл Матросов</div>
-                  <article class="team-member__desc">
-                      <div class="team-member__role">Оператор</div>
-                      <p class="team-member__text">С радостью поможет подобрать батончики и оформить заказ.</p>
-                  </article>
-                </li>
-                <li class="team__member team__member--active">
-                  <div class="team-member__image">
-                    <img src="./img/team/photo-1549351512-c5e12b11e283.jpg" alt="PR, маркетинг" class="team-member__img">
-                  </div>
-                  <div class="team-member__name">Мила Рыжкова</div>
-                  <article class="team-member__desc">
-                      <div class="team-member__role">PR, маркетинг</div>
-                      <p class="team-member__text">По всем вопросам сотрудничества и рекламы писать только Миле.</p>
-                  </article>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="team__borderline-images borderline-images">
-          <div class="team__berry">
-            <img src="./img/team/Малина.png" alt="raspberry" class="team__berry-img">
-          </div>
-        </div>
-      </section>
-      <section class="menu" id="menu">
-        <div class="menu__content content-center">
-          <div class="menu__main">
-            <h2 class="base__title menu__title">Меню</h2>
-            <ul class="menu__list">
-              <li class="menu__item menu__item-milk">
-                <div class="menu__subtitle"><span>Батончики с молоком</span></div>
-                <div class="menu__desc">
-                  <p class="menu__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
-                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
-                    </p>
-                </div>
-              </li>
-              <li class="menu__item menu__item-honey">
-                <div class="menu__subtitle"><span>С мёдом и фруктами</span></div>
-                <div class="menu__desc">
-                  <p class="menu__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
-                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
-                    </p>
-                </div>
-              </li>
-              <li class="menu__item menu__item-berry menu__item--active">
-                <div class="menu__subtitle"><span>Дикие ягоды</span></div>
-                <div class="menu__desc">
-                  <p class="menu__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
-                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
-                    </p>
-                </div>
-              </li>
             </ul>
-          </div>
-        </div>
-      </section>
-      <section class="reviews" id="reviews">
-        <div class="container">
-          <div class="reviews__content content-center">
-            <div class="reviews__main">
-              <h2 class="base__title base__title--black reviews__title">Отзывы</h2>
-              <div class="reviews__slider">
-                <ul class="reviews__list">
-                  <li class="reviews__item reviews__item--active">
-                    <div class="reviews__image">
-                      <img src="./img/reviews/photo1.jpg" alt="author's photo" class="reviews__img">
+        </aside>
+        <section class="first-screen" id="first-screen">
+            <div class="container">
+                <header class="header">
+                    <div class="logo header__logo">
+                        <a href="#first-screen" class="header__logo-link">
+                            <img src="./img/firstScreen/logo.png" alt="logo">
+                        </a>
                     </div>
-                    <article class="reviews__desc">
-                      <h4 class="reviews__subtitle">Лучший перекус</h4>
-                      <p class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером 
-                        и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно 
-                        и удобно.</p>
-                      <div class="reviews__author">Алёна Хмельницкая</div>
-                    </article>
-                  </li>
-                  <!-- <li class="reviews__item">
+                    <nav class="nav">
+                        <!--nav--active-->
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#about" class="nav__link">О нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#candy-bar" class="nav__link">Батончики</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#team" class="nav__link">Команда</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#menu" class="nav__link">Меню</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#reviews" class="nav__link">Отзывы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#weWork" class="nav__link">Как мы работаем</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#map" class="nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="contacts header__contacts">
+                        <a class="header__phone" href="tel:+78009039090">8 800 903 90 90</a>
+                    </div>
+                    <a href="#" class="hamburger-menu__wrap">
+                        <!--hamburger-menu__wrap--active-->
+                        <div class="hamburger-menu"></div>
+                    </a>
+                </header>
+                <div class="first-screen__content">
+                    <div class="first-screen__main content-center">
+                        <div class="first-screen__desc">
+                            <div class="first-screen__info">
+                                <h1 class="base__title first-screen__title">натуральные шоколадные батончики</h1>
+                                <p class="first-screen__text">Наши батончики идеально подходят для тех, кто следит за
+                                    своим здоровьем</p>
+                                <a href="#order" class="btn btn--white first-screen__btn">Заказать</a>
+                            </div>
+                            <ul class="advantages">
+                                <li class="advantages__item">
+                                    <div class="advantages__image">
+                                        <svg class="advantages__img">
+                                            <use xlink:href="./img/sprite.svg#advantages__1"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="advantages__text">100% натуральный продукт</div>
+                                </li>
+                                <li class="advantages__item">
+                                    <div class="advantages__image">
+                                        <svg class="advantages__img">
+                                            <use xlink:href="./img/sprite.svg#advantages__2"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="advantages__text">3-5 дней доставка по РФ</div>
+                                </li>
+                                <li class="advantages__item">
+                                    <div class="advantages__image">
+                                        <svg class="advantages__img">
+                                            <use xlink:href="./img/sprite.svg#advantages__3"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="advantages__text">Не портит фигуру</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="first-screen__image">
+                            <img src="./img/firstScreen/Батончики.png" alt="chocolate bar" class="first-screen__img">
+                        </div>
+                    </div>
+                    <div class="first-screen__borderline-images fs__borderline borderline-images">
+                        <div class="fs-borderline__left">
+                            <img src="./img/firstScreen/singleLeaf.png" alt="leaf">
+                        </div>
+                        <div class="fs-borderline__right">
+                            <!-- Добавить дивы? -->
+                            <img src="./img/firstScreen/doubleLeaf.png" alt="leafs">
+                            <img src="./img/firstScreen/Ежевика.png" alt="blackberry">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__content content-center">
+                    <div class="about__main">
+                        <div class="about__desc">
+                            <h2 class="about__title base__title base__title--black">почему chocco?</h2>
+                            <p class="about__text">В нашем мире все происходит очень быстро, поэтому мы делаем
+                                батончики, которые удобно взять с собой.</p>
+                        </div>
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <div class="about__image">
+                                    <svg class="about__img">
+                                        <use xlink:href="./img/sprite.svg#about__1"></use>
+                                    </svg>
+                                </div>
+                                <div class="about__item-desc">
+                                    <h4 class="about__subtitle">Полезно</h4>
+                                    <p class="about__item-text">Натуральность - ключевое качество нашей продукции. Мы
+                                        используем только природные ингредиенты.</p>
+                                </div>
+                            </li>
+                            <li class="about__item">
+                                <div class="about__image">
+                                    <svg class="about__img">
+                                        <use xlink:href="./img/sprite.svg#about__2"></use>
+                                    </svg>
+                                </div>
+                                <div class="about__item-desc">
+                                    <h4 class="about__subtitle">Вкусно</h4>
+                                    <p class="about__item-text">Нежный, ненавязчивый, изысканный – так клиенты описывают
+                                        вкусовые качества наших батончиков.</p>
+                                </div>
+                            </li>
+                            <li class="about__item">
+                                <div class="about__image">
+                                    <svg class="about__img">
+                                        <use xlink:href="./img/sprite.svg#about__3"></use>
+                                    </svg>
+                                </div>
+                                <div class="about__item-desc">
+                                    <h4 class="about__subtitle">Питательно</h4>
+                                    <p class="about__item-text">Высокое содержание качественного белка, а также всех
+                                        необходимых витаминов и минералов.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about__borderline-images borderline-images">
+                <div class="about__leaf">
+                    <img src="./img/about/bg_leaf.png" alt="leaf" class="about__leaf-img">
+                </div>
+
+                <div class="about__berry">
+                    <img src="./img/about/малина.png" alt="raspberry" class="about__berry-img">
+                </div>
+            </div>
+        </section>
+        <section class="candy-bar" id="candy-bar">
+            <div class="container">
+                <div class="candy-bar__content content-center">
+                    <div class="candy-bar__main">
+                        <div class="candy-bar__prev">
+                            <div class="prev__image">
+                                <svg class="prev__img">
+                                    <use xlink:href="./img/sprite.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="candy-bar__slider">
+                            <li class="candy-bar__item">
+                                <div class="candy-bar__image">
+                                    <img src="./img/candy bar/Товар0.png" alt="candy bar" class="candy-bar__img">
+                                </div>
+                                <div class="candy-bar__desc">
+                                    <div class="candy-bar__composition">
+                                        <div class="candy-bar__composition-block">
+                                            <svg class="candy-bar__composition-img">
+                                                <use xlink:href="./img/sprite.svg#chocolate-bar"></use>
+                                            </svg>
+                                            <div class="candy-bar__composition-signature">Состав</div>
+                                        </div>
+                                        <div class="ingredients__wrap">
+                                            <table class="composition__list ingredients">
+                                                <tr class="ingredients__item">
+                                                    <td class="ingredients__image ingredients__cell">
+                                                        <svg class="ingredients__img">
+                                                            <use xlink:href="./img/sprite.svg#grape"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="ingredients__name ingredients__cell">Виноград</td>
+                                                    <td class="ingredients__weight ingredients__cell">25 г</td>
+                                                </tr>
+                                                <tr class="ingredients__item">
+                                                    <td class="ingredients__image ingredients__cell">
+                                                        <svg class="ingredients__img">
+                                                            <use xlink:href="./img/sprite.svg#nut"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="ingredients__name ingredients__cell">Грецкий орех</td>
+                                                    <td class="ingredients__weight ingredients__cell">32 г</td>
+                                                </tr>
+                                                <tr class="ingredients__item">
+                                                    <td class="ingredients__image ingredients__cell">
+                                                        <svg class="ingredients__img">
+                                                            <use xlink:href="./img/sprite.svg#sesame"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="ingredients__name ingredients__cell">Кунжутное семя</td>
+                                                    <td class="ingredients__weight ingredients__cell">20 г</td>
+                                                </tr>
+                                                <tr class="ingredients__item">
+                                                    <td class="ingredients__image ingredients__cell">
+                                                        <svg class="ingredients__img">
+                                                            <use xlink:href="./img/sprite.svg#powder-milk"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="ingredients__name ingredients__cell">Сухое молоко</td>
+                                                    <td class="ingredients__weight ingredients__cell">10 г</td>
+                                                </tr>
+                                                <tr class="ingredients__item">
+                                                    <td class="ingredients__image ingredients__cell">
+                                                        <svg class="ingredients__img">
+                                                            <use xlink:href="./img/sprite.svg#honey"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="ingredients__name ingredients__cell">Заменитель сахара</td>
+                                                    <td class="ingredients__weight ingredients__cell">4 г</td>
+                                                </tr>
+                                                <tr class="ingredients__item">
+                                                    <td class="ingredients__image ingredients__cell">
+                                                        <svg class="ingredients__img">
+                                                            <use xlink:href="./img/sprite.svg#cocoa"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="ingredients__name ingredients__cell">Какао бобы</td>
+                                                    <td class="ingredients__weight ingredients__cell">4 г</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <h3 class="candy-bar__subtitle">
+                                        Батончик “Гранола виноград”
+                                    </h3>
+                                    <div class="candy-bar__text">
+                                        <div class="candy-bar__row-text">
+                                            <p class="candy-bar__paragraph">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                        </div>
+                                        <div class="candy-bar__row">
+                                            <div class="candy-bar__block">
+                                                <div class="candy-bar__block-subtitle">Калорийность</div>
+                                                <div class="candy-bar__value">110 ккал</div>
+                                            </div>
+                                            <div class="candy-bar__block">
+                                                <div class="candy-bar__block-subtitle">Вес</div>
+                                                <div class="candy-bar__value">95 грамм</div>
+                                            </div>
+                                        </div>
+                                        <div class="candy-bar__row candy-bar__row-btn">
+                                            <div class="candy-bar__block">
+                                                <div class="candy-bar__cost">140 Р</div>
+                                            </div>
+                                            <div class="candy-bar__block">
+                                                <a href="#order" class="btn candy-bar__btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="candy-bar__next">
+                            <div class="prev__image">
+                                <svg class="prev__img">
+                                    <use xlink:href="./img/sprite.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="candy-bar__borderline-images">
+                <div class="candy-bar__leaf">
+                    <img src="./img/candy bar/Узор на фоне.png" alt="leaf" class="candy-bar__leaf-img">
+                </div>
+                <div class="candy-bar__berry">
+                    <img src="./img/candy bar/Ягода.png" alt="berry" class="candy-bar__berry-img">
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="container">
+                <div class="team__content content-center">
+                    <div class="team__main">
+                        <h2 class="team__title base__title base__title--black">Команда</h2>
+                        <ul class="team__list">
+                            <li class="team__member">
+                                <div class="team-member__image">
+                                    <img src="./img/team/photo-1542211295-d5bf730e56cd.jpg" alt="Главный технолог"
+                                        class="team-member__img">
+                                </div>
+                                <div class="team-member__name">Борис Федорович</div>
+                                <article class="team-member__desc">
+                                    <div class="team-member__role">Главный технолог</div>
+                                    <p class="team-member__text">Отвечает за вкусовые качества и калорийность.</p>
+                                </article>
+                            </li>
+                            <li class="team__member">
+                                <div class="team-member__image">
+                                    <img src="./img/team/photo-1548534984-ddf53b264a58.jpg" alt="Специалист по упаковке"
+                                        class="team-member__img">
+                                </div>
+                                <div class="team-member__name">Алла Иванова</div>
+                                <article class="team-member__desc">
+                                    <div class="team-member__role">Специалист по упаковке</div>
+                                    <p class="team-member__text">Автор запоминающегося стиля наших батончиков.</p>
+                                </article>
+                            </li>
+                            <li class="team__member">
+                                <div class="team-member__image">
+                                    <img src="./img/team/photo-1551153771-1a67a570d583.jpg" alt="Оператор"
+                                        class="team-member__img">
+                                </div>
+                                <div class="team-member__name">Кирилл Матросов</div>
+                                <article class="team-member__desc">
+                                    <div class="team-member__role">Оператор</div>
+                                    <p class="team-member__text">С радостью поможет подобрать батончики и оформить
+                                        заказ.</p>
+                                </article>
+                            </li>
+                            <li class="team__member team__member--active">
+                                <div class="team-member__image">
+                                    <img src="./img/team/photo-1549351512-c5e12b11e283.jpg" alt="PR, маркетинг"
+                                        class="team-member__img">
+                                </div>
+                                <div class="team-member__name">Мила Рыжкова</div>
+                                <article class="team-member__desc">
+                                    <div class="team-member__role">PR, маркетинг</div>
+                                    <p class="team-member__text">По всем вопросам сотрудничества и рекламы писать только
+                                        Миле.</p>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="team__borderline-images borderline-images">
+                <div class="team__berry">
+                    <img src="./img/team/Малина.png" alt="raspberry" class="team__berry-img">
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <div class="menu__content content-center">
+                <div class="menu__main">
+                    <h2 class="base__title menu__title">Меню</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item-milk">
+                            <div class="menu__subtitle"><span>Батончики с молоком</span></div>
+                            <div class="menu__desc">
+                                <p class="menu__text">Рекомендуем употреблять батончики вместе с кокосовым или
+                                    миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик
+                                    – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно
+                                    и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её
+                                    будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu__item menu__item-honey">
+                            <div class="menu__subtitle"><span>С мёдом и фруктами</span></div>
+                            <div class="menu__desc">
+                                <p class="menu__text">Рекомендуем употреблять батончики вместе с кокосовым или
+                                    миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик
+                                    – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно
+                                    и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её
+                                    будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu__item menu__item-berry menu__item--active">
+                            <div class="menu__subtitle"><span>Дикие ягоды</span></div>
+                            <div class="menu__desc">
+                                <p class="menu__text">Рекомендуем употреблять батончики вместе с кокосовым или
+                                    миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик
+                                    – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно
+                                    и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её
+                                    будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="reviews__content content-center">
+                    <div class="reviews__main">
+                        <h2 class="base__title base__title--black reviews__title">Отзывы</h2>
+                        <div class="reviews__slider">
+                            <ul class="reviews__list">
+                                <li class="reviews__item reviews__item--active">
+                                    <div class="reviews__image">
+                                        <img src="./img/reviews/photo1.jpg" alt="author's photo" class="reviews__img">
+                                    </div>
+                                    <article class="reviews__desc">
+                                        <h4 class="reviews__subtitle">Лучший перекус</h4>
+                                        <p class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою
+                                            продуктивность в разы. В течение дня сижу за компьютером и часто отходить в
+                                            кафе или на кухню просто не могу себе позволить. А батончик – он всегда под
+                                            рукой. Это
+                                            приятно и удобно.</p>
+                                        <div class="reviews__author">Алёна Хмельницкая</div>
+                                    </article>
+                                </li>
+                                <!-- <li class="reviews__item">
                     <div class="reviews__image">
                       <img src="./img/reviews/photo2.jpg" alt="author's photo" class="reviews__img">
                     </div>
@@ -307,170 +474,175 @@
                       <div class="reviews__author">Мария Орлова</div>
                     </article>
                   </li> -->
-                </ul>
-                <ul class="reviews__mini-list">
-                  <li class="reviews__mini-item reviews__mini-item--active">
-                    <div class="reviews__mini-image">
-                      <img src="./img/reviews/photo1.jpg" alt="author's photo" class="reviews__mini-img">
+                            </ul>
+                            <ul class="reviews__mini-list">
+                                <li class="reviews__mini-item reviews__mini-item--active">
+                                    <div class="reviews__mini-image">
+                                        <img src="./img/reviews/photo1.jpg" alt="author's photo"
+                                            class="reviews__mini-img">
+                                    </div>
+                                </li>
+                                <li class="reviews__mini-item">
+                                    <div class="reviews__mini-image">
+                                        <img src="./img/reviews/photo2.jpg" alt="author's photo"
+                                            class="reviews__mini-img">
+                                    </div>
+                                </li>
+                                <li class="reviews__mini-item">
+                                    <div class="reviews__mini-image">
+                                        <img src="./img/reviews/photo3.jpg" alt="author's photo"
+                                            class="reviews__mini-img">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </li>
-                  <li class="reviews__mini-item">
-                    <div class="reviews__mini-image">
-                      <img src="./img/reviews/photo2.jpg" alt="author's photo" class="reviews__mini-img">
-                    </div>
-                  </li>
-                  <li class="reviews__mini-item">
-                    <div class="reviews__mini-image">
-                      <img src="./img/reviews/photo3.jpg" alt="author's photo" class="reviews__mini-img">
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="reviews__borderline-images borderline-images">
-          <div class="reviews__borderline-top">
-            <img src="./img/reviews/berry.png" alt="Strawberry">
-          </div>
-          <div class="reviews__borderline-bottom">
-            <div class="reviews__borderline-leaf">
-              <img src="./img/reviews/Узор.png" alt="leaf">
-            </div>
-            <div class="reviews__borderline-berry">
-              <img src="./img/reviews/Ягоды.png" alt="berry">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="weWork" id="weWork">
-        <div class="container">
-          <div class="weWork__content content-center"></div>
-        </div>
-      </section>
-      <section class="order" id="order">
-        <div class="container">
-          <div class="order__content content-center">
-            <div class="order__main">
-              <h2 class="base__title base__title--green order__title">Закажите доставку</h2>
-              <form action="" class="order__form form">
-                <div class="form__group">
-                  <div class="form__row">
-                    <label  class="form__block">
-                      <div class="form__text">Имя</div>
-                      <input type="text" name="firstName" id="" class="form__input">
-                    </label>
-                    <label  class="form__block">
-                      <div class="form__text">Телефон</div>
-                      <input type="text" name="phone" id="" class="form__input">
-                    </label>
-                  </div>
-                  <div class="form__row">
-                    <label  class="form__block">
-                      <div class="form__text">Улица</div>
-                      <input type="text" name="street" id="" class="form__input">
-                    </label>
-                  </div>
-                  <div class="form__row">
-                    <label  class="form__block">
-                      <div class="form__text">Дом</div>
-                      <input type="text" name="house" id="" class="form__input">
-                    </label>
-                    <label  class="form__block">
-                      <div class="form__text">Корпус</div>
-                      <input type="text" name="housing" id="" class="form__input">
-                    </label>
-                    <label  class="form__block">
-                      <div class="form__text">Квартира</div>
-                      <input type="text" name="apartment" id="" class="form__input">
-                    </label>
-                    <label  class="form__block">
-                      <div class="form__text">Этаж</div>
-                      <input type="text" name="floor" id="" class="form__input">
-                    </label>
-                  </div>
                 </div>
-                <div class="form__group">
-                  <div class="form__row">
-                    <label class="form__block">
-                      <div class="form__text">Комментарий</div>
-                      <textarea name="comment" class="form__field form__input"></textarea>
-                    </label>
-                  </div>
-                  <div class="form__row form__row-switches">
-                    <label  class="form__radio-label">
-                      <input type="radio" name="payment" id="" value="Сдача">
-                      <div class="form__radio-text">Потребуется сдача</div>
-                    </label>
-                    <label  class="form__radio-label">
-                      <input type="radio" name="payment" id="" value="Карта" checked>
-                      <div class="form__radio-text">Оплата по карте</div>
-                    </label>
-                  </div>
-                  <div class="form__row form__row-switches">
-                    <label class="form__block">
-                      <input type="checkbox" name="doNotCall" id="" checked>
-                      <div class="form__text">Не перезванивать</div>
-                    </label>
-                  </div>
-                  <div class="form__row form__btns">
-                    <button type="submit" class="btn form__btn">Заказать</button>
-                    <button type="reset" class="form__btn-reset">Очистить</button>
-                  </div>
-                </div>
-              </form>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="map" id="map">
-        <div class="map__content content-center">
+            <div class="reviews__borderline-images borderline-images">
+                <div class="reviews__borderline-top">
+                    <img src="./img/reviews/berry.png" alt="Strawberry">
+                </div>
+                <div class="reviews__borderline-bottom">
+                    <div class="reviews__borderline-leaf">
+                        <img src="./img/reviews/Узор.png" alt="leaf">
+                    </div>
+                    <div class="reviews__borderline-berry">
+                        <img src="./img/reviews/Ягоды.png" alt="berry">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="weWork" id="weWork">
+            <div class="container">
+                <div class="weWork__content content-center"></div>
+            </div>
+        </section>
+        <section class="order" id="order">
+            <div class="container">
+                <div class="order__content content-center">
+                    <div class="order__main">
+                        <h2 class="base__title base__title--green order__title">Закажите доставку</h2>
+                        <form action="" class="order__form form">
+                            <div class="form__group">
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__text">Имя</div>
+                                        <input type="text" name="firstName" id="" class="form__input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__text">Телефон</div>
+                                        <input type="text" name="phone" id="" class="form__input">
+                                    </label>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__text">Улица</div>
+                                        <input type="text" name="street" id="" class="form__input">
+                                    </label>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__text">Дом</div>
+                                        <input type="text" name="house" id="" class="form__input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__text">Корпус</div>
+                                        <input type="text" name="housing" id="" class="form__input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__text">Квартира</div>
+                                        <input type="text" name="apartment" id="" class="form__input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__text">Этаж</div>
+                                        <input type="text" name="floor" id="" class="form__input">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__text">Комментарий</div>
+                                        <textarea name="comment" class="form__field form__input"></textarea>
+                                    </label>
+                                </div>
+                                <div class="form__row form__row-switches">
+                                    <label class="form__radio-label">
+                                        <input type="radio" name="payment" id="" value="Сдача">
+                                        <div class="form__radio-text">Потребуется сдача</div>
+                                    </label>
+                                    <label class="form__radio-label">
+                                        <input type="radio" name="payment" id="" value="Карта" checked>
+                                        <div class="form__radio-text">Оплата по карте</div>
+                                    </label>
+                                </div>
+                                <div class="form__row form__row-switches">
+                                    <label class="form__block">
+                                        <input type="checkbox" name="doNotCall" id="" checked>
+                                        <div class="form__text">Не перезванивать</div>
+                                    </label>
+                                </div>
+                                <div class="form__row form__btns">
+                                    <button type="submit" class="btn form__btn">Заказать</button>
+                                    <button type="reset" class="form__btn-reset">Очистить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map" id="map">
+            <div class="map__content content-center">
 
-        </div>
-        <footer class="footer">
-          <div class="container">
-           <div class="footer__content">
-              <address class="footer__contacts-block">
-                <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
-                <div class="footer__contacts contacts">
-                  <a class="footer__phone" href="tel:+78009039090">8 800 903 90 90</a>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__content">
+                        <address class="footer__contacts-block">
+                            <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
+                            <div class="footer__contacts contacts">
+                                <a class="footer__phone" href="tel:+78009039090">8 800 903 90 90</a>
+                            </div>
+                        </address>
+                        <ul class="social">
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <svg class="social__img">
+                                        <use xlink:href="./img/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <svg class="social__img">
+                                        <use xlink:href="./img/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <svg class="social__img">
+                                        <use xlink:href="./img/sprite.svg#inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <svg class="social__img">
+                                        <use xlink:href="./img/sprite.svg#tw"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </address> 
-              <ul class="social">
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img">
-                      <use xlink:href="./img/sprite.svg#fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img">
-                      <use xlink:href="./img/sprite.svg#inst"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img">
-                      <use xlink:href="./img/sprite.svg#tw"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-           </div>
-          </div>
-        </footer>
-      </section>
-   <!-- </div> -->
-  </div>
+            </footer>
+        </section>
+        <!-- </div> -->
+    </div>
+    <script src="./js/nav_menu.js"></script>
 </body>
+
 </html>
