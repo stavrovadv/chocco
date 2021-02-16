@@ -12,4 +12,11 @@ nav.addEventListener('click', function(){
 function toggleMenu(){
   hamburger.classList.toggle('hamburger-menu__wrap--active');
   nav.classList.toggle('nav--active');
+
+  if(document.body.style.overflow!=="hidden"){
+    document.body.style.overflow="hidden";
+  }
+  else{
+    document.body.removeAttribute('style');
+  }
 }
